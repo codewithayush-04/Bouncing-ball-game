@@ -72,18 +72,28 @@ const BallJumpGame = () => {
 
     gameLoopRef.current = setInterval(() => {
       setBallPosition(prev => {
-        const newPos = prev + ballVelocity;
-        return newPos >= GROUND_LEVEL ? GROUND_LEVEL : newPos;
-      });
-
-      setBallVelocity(prev => {
-        if (ballPosition >= GROUND_LEVEL) return 0;
-        return prev + GRAVITY;
+        if (isJumpingRef.current) {
+          // Jump up to maximum height
+          const targetHeight = GROUND_LEVEL - JUMP_HEIGHT;
+          if (prev > targetHeight) {
+            return Math.max(prev - JUMP_SPEED, targetHeight);
+          } else {
+            // Reached top, start falling
+            isJumpingRef.current = false;
+            return prev;
+          }
+        } else {
+          // Fall back down
+          if (prev < GROUND_LEVEL) {
+            return Math.min(prev + FALL_SPEED, GROUND_LEVEL);
+          }
+          return GROUND_LEVEL;
+        }
       });
     }, 1000 / 60);
 
     return () => clearInterval(gameLoopRef.current);
-  }, [gameState, ballVelocity, ballPosition]);
+  }, [gameState]);
 
   // Obstacle generation
   useEffect(() => {
