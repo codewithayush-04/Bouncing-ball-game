@@ -173,7 +173,7 @@ const BallJumpGame = () => {
     return () => clearInterval(moveObstacles);
   }, [gameState, gameSpeed, ballPosition]);
 
-  // Score increase
+  // Score increase and difficulty scaling
   useEffect(() => {
     if (gameState !== 'playing') return;
 
@@ -183,7 +183,19 @@ const BallJumpGame = () => {
         
         // Increase difficulty every 100 points
         if (newScore % 100 === 0) {
-          setGameSpeed(prevSpeed => Math.min(prevSpeed + 0.5, 12));
+          // Increase obstacle speed
+          setGameSpeed(prevSpeed => {
+            const newSpeed = Math.min(prevSpeed + 1.5, 15);
+            console.log(`Score: ${newScore} - Speed increased to ${newSpeed}`);
+            return newSpeed;
+          });
+          
+          // Decrease spawn rate (faster obstacle generation)
+          setObstacleSpawnRate(prevRate => {
+            const newRate = Math.max(prevRate - 200, 800);
+            console.log(`Score: ${newScore} - Spawn rate decreased to ${newRate}ms`);
+            return newRate;
+          });
         }
         
         return newScore;
