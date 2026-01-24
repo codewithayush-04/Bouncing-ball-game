@@ -17,8 +17,9 @@ const BallJumpGame = () => {
   
   const GROUND_LEVEL = 300;
   const BALL_SIZE = 50;
-  const GRAVITY = 0.8;
-  const JUMP_FORCE = -15;
+  const JUMP_HEIGHT = 150; // Maximum jump height
+  const JUMP_SPEED = 8; // Speed of jump animation
+  const FALL_SPEED = 8; // Speed of falling animation
   const OBSTACLE_WIDTH = 30;
   const OBSTACLE_HEIGHT = 50;
 
