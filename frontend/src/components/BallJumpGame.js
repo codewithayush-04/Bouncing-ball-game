@@ -33,16 +33,12 @@ const BallJumpGame = () => {
   const handleJump = useCallback(() => {
     if (gameState === 'ready') {
       startGame();
-    } else if (gameState === 'playing' && ballPosition >= GROUND_LEVEL - 5 && !isJumpingRef.current) {
+    } else if (gameState === 'playing' && !isJumpingRef.current) {
       isJumpingRef.current = true;
-      setBallVelocity(JUMP_FORCE);
-      setTimeout(() => {
-        isJumpingRef.current = false;
-      }, 100);
     } else if (gameState === 'gameover') {
       restartGame();
     }
-  }, [gameState, ballPosition]);
+  }, [gameState]);
 
   // Keyboard listener
   useEffect(() => {
