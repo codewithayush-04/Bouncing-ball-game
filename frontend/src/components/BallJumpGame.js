@@ -58,7 +58,8 @@ const BallJumpGame = () => {
     setScore(0);
     setBallPosition(GROUND_LEVEL);
     setObstacles([]);
-    setGameSpeed(5);
+    setGameSpeed(6);
+    setObstacleSpawnRate(2000);
     isJumpingRef.current = false;
   };
 
