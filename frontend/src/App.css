@@ -66,6 +66,20 @@ body {
   color: #667eea;
 }
 
+.level-indicator {
+  color: #FF6B35;
+  animation: levelPulse 2s ease-in-out infinite;
+}
+
+@keyframes levelPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
 .game-canvas {
   position: relative;
   width: 100%;
