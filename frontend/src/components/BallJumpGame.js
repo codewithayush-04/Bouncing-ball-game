@@ -7,7 +7,8 @@ const BallJumpGame = () => {
   const [highScore, setHighScore] = useState(0);
   const [ballPosition, setBallPosition] = useState(300);
   const [obstacles, setObstacles] = useState([]);
-  const [gameSpeed, setGameSpeed] = useState(5);
+  const [gameSpeed, setGameSpeed] = useState(6);
+  const [obstacleSpawnRate, setObstacleSpawnRate] = useState(2000); // milliseconds between obstacles
   
   const gameLoopRef = useRef(null);
   const obstacleTimerRef = useRef(null);
