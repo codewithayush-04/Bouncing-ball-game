@@ -96,22 +96,42 @@ const BallJumpGame = () => {
     return () => clearInterval(gameLoopRef.current);
   }, [gameState]);
 
-  // Obstacle generation
+  // Obstacle generation with dynamic spawn rate
   useEffect(() => {
     if (gameState !== 'playing') return;
 
     const spawnObstacle = () => {
       const newObstacle = {
-        id: Date.now(),
+        id: Date.now() + Math.random(),
         x: 800,
         height: OBSTACLE_HEIGHT,
       };
       setObstacles(prev => [...prev, newObstacle]);
     };
 
-    obstacleTimerRef.current = setInterval(spawnObstacle, 2000);
+    // Initial spawn
+    spawnObstacle();
+
+    // Set up interval with current spawn rate
+    obstacleTimerRef.current = setInterval(() => {
+      // Sometimes spawn closer obstacles at higher scores (20% chance when score > 200)
+      if (score > 200 && Math.random() < 0.2) {
+        // Spawn a close obstacle
+        setTimeout(() => {
+          const closeObstacle = {
+            id: Date.now() + Math.random(),
+            x: 800,
+            height: OBSTACLE_HEIGHT,
+          };
+          setObstacles(prev => [...prev, closeObstacle]);
+        }, obstacleSpawnRate * 0.4); // 40% of normal time = closer obstacle
+      }
+      
+      spawnObstacle();
+    }, obstacleSpawnRate);
+
     return () => clearInterval(obstacleTimerRef.current);
-  }, [gameState]);
+  }, [gameState, obstacleSpawnRate, score]);
 
   // Move obstacles and check collision
   useEffect(() => {
