@@ -222,6 +222,12 @@ const BallJumpGame = () => {
             <span className="score-value" data-testid="current-score">{score}</span>
           </div>
           <div className="score-item">
+            <span className="score-label">Level</span>
+            <span className="score-value level-indicator" data-testid="level-indicator">
+              {Math.floor(score / 100) + 1}
+            </span>
+          </div>
+          <div className="score-item">
             <span className="score-label">High Score</span>
             <span className="score-value" data-testid="high-score">{highScore}</span>
           </div>
