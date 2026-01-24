@@ -6,7 +6,6 @@ const BallJumpGame = () => {
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
   const [ballPosition, setBallPosition] = useState(300);
-  const [ballVelocity, setBallVelocity] = useState(0);
   const [obstacles, setObstacles] = useState([]);
   const [gameSpeed, setGameSpeed] = useState(5);
   
