@@ -1,10 +1,10 @@
 import "@/App.css";
-import BallJumpGame from "./components/BallJumpGame";
+import BouncyBallGame from "./components/BouncyBallGame";
 
 function App() {
   return (
     <div className="App">
-      <BallJumpGame />
+      <BouncyBallGame />
     </div>
   );
 }
