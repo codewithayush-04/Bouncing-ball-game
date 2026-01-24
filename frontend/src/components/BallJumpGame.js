@@ -57,9 +57,9 @@ const BallJumpGame = () => {
     setGameState('playing');
     setScore(0);
     setBallPosition(GROUND_LEVEL);
-    setBallVelocity(0);
     setObstacles([]);
     setGameSpeed(5);
+    isJumpingRef.current = false;
   };
 
   const restartGame = () => {
