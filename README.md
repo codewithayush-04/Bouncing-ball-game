@@ -78,5 +78,6 @@ This project helped me strengthen my fundamentals in JavaScript game development
 
 Ayush Gupta
 Aspiring Frontend / MERN Stack Developer
+As for the my perspective the emergent AI is the future as a coder i use it personally , the emergent AI get the instructions and it also use it own server to deploy it. 
 
 
