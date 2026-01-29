@@ -2,7 +2,7 @@
 
 A simple Bouncing Ball Game created using Emergent AI. This project demonstrates basic game physics, animation, and event handling while showcasing how AI-assisted development can speed up learning and prototyping.
 
-⸻
+
 
 📌 Project Overview
 
@@ -10,7 +10,7 @@ The Bouncing Ball Game is a browser-based game where a ball moves continuously a
 
 This project was built with the help of Emergent, an AI-powered development platform that assists in generating code, logic, and structure efficiently.
 
-⸻
+
 
 🛠️ Technologies Used
 	•	HTML5 – Structure of the game
@@ -18,7 +18,7 @@ This project was built with the help of Emergent, an AI-powered development plat
 	•	JavaScript – Game logic, animation, and physics
 	•	Emergent AI – AI-assisted code generation and development support
 
-⸻
+
 
 🎯 Features of the Game
 	•	Smooth ball movement using animation loops
@@ -27,7 +27,7 @@ This project was built with the help of Emergent, an AI-powered development plat
 	•	Responsive canvas that adapts to screen size
 	•	Clean and beginner-friendly code structure
 
-⸻
+
 
 🚀 What I Learned from This Project
 
@@ -66,13 +66,13 @@ Emergent played a key role in accelerating development and learning.
 	•	Boosts confidence while coding
 	•	Encourages experimentation and creativity
 
-⸻
+
 
 📚 Conclusion
 
 This project helped me strengthen my fundamentals in JavaScript game development while also giving hands-on experience with AI-assisted coding using Emergent. It shows how modern AI tools can support learning, speed up development, and improve overall productivity.
 
-⸻
+
 
 👤 Author
 
