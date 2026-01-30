@@ -65,8 +65,36 @@ Emergent played a key role in accelerating development and learning.
 	•	Helps understand complex logic easily
 	•	Boosts confidence while coding
 	•	Encourages experimentation and creativity
+	
+📶 project structure:
+bouncing-ball-game/
+│
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── components/
+│   │   ├── Ball.js
+│   │   ├── GameArea.js
+│   │   └── Physics.js
+│   │
+│   ├── styles/
+│   │   └── style.css
+│   │
+│   ├── utils/
+│   │   └── constants.js
+│   │
+│   └── main.js
+│
+├── assets/
+│   └── preview.png
+│
+├── README.md
+└── package.json (optional)
 
-
+using live server
+git clone https://github.com/your-username/bouncing-ball-game.git
+cd bouncing-ball-game
 
 📚 Conclusion
 
