@@ -92,7 +92,7 @@ bouncing-ball-game/
 ├── README.md
 └── package.json (optional)
 
-using live server
+using live server:
 git clone https://github.com/your-username/bouncing-ball-game.git
 cd bouncing-ball-game
 
@@ -103,9 +103,9 @@ This project helped me strengthen my fundamentals in JavaScript game development
 
 
 👤 Author
-
 Ayush Gupta
-Aspiring Frontend / MERN Stack Developer
+Frontend Developer | BCA Student
+Passionate about Web Development & Game Logic
 As for the my perspective the emergent AI is the future as a coder i use it personally , the emergent AI get the instructions and it also use it own server to deploy it. 
 
 
