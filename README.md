@@ -194,7 +194,7 @@ This project is open-source and available under the MIT License.
 ## 📬 Contact
 
 👨‍💻 Developer: Ayush Gupta  
-💼 GitHub: https://github.com/YOUR_USERNAME  
+💼 GitHub: https://github.com/codewithayush-04 
 
 ---
 
