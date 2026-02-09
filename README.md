@@ -29,7 +29,6 @@ An interactive **Bouncing Ball Game** built using the MERN Stack (MongoDB, Expre
 | CSS3 | Styling |
 | JavaScript (ES6+) | Game logic & interactivity |
 
----
 
 ## 🚀 Installation & Setup
 
