@@ -195,8 +195,6 @@ This project is open-source and available under the MIT License.
 👨‍💻 Developer: Ayush Gupta  
 💼 GitHub: https://github.com/codewithayush-04 
 
----
-
 ⭐ If you like this project, consider giving it a star on GitHub!
 
 
